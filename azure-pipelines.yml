@@ -6,7 +6,11 @@
 trigger:
 - master
 
+
 pool:
+  name: 'MyAgentPool'
+  demands:
+      - npm
   vmImage: ubuntu-latest
 
 variables:
